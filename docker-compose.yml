@@ -1,0 +1,19 @@
+  
+---
+version: '3.8'
+
+networks:
+  mrjbnetwork:
+
+services:
+    lagsimulator:
+      build: ./simulatedlag/
+      image: mrjamiebowman/simulatedlag
+      container_name: simulatedlag
+      hostname: simulatedlag
+      ports:
+        - 8080:8080
+      depends_on:
+        - connect
+      networks:
+        - mrjbnetwork
