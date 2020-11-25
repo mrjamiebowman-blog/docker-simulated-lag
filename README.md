@@ -5,7 +5,7 @@ This docker container can act as a proxy to route traffic to another destination
 [Simulating Lag with Docker Containers](https://www.mrjamiebowman.com/devops/docker-devops/simulating-lag-with-docker-containers/)
 
 ## How to use
-You'll have to modify the startup.sh script.
+You'll have to modify the startup.sh script. I used this to simulate latency to a Kafka Connect API so you will need to adjust this. I may expand this later and include a better sample. For now... this is all I can provide.
 
 Change `connect` to the name of the docker container that you want to reroute traffic to.
 

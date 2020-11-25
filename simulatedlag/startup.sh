@@ -9,7 +9,7 @@ DESTINATION_IP=$(dig connect +short)
 tc qdisc add dev eth0 root netem delay 100ms
 
 # socat multipurpose relay
-socat tcp-listen:8083,reuseaddr,fork tcp:$DESTINATION_IP:8083
+socat tcp-listen:8080,reuseaddr,fork tcp:$DESTINATION_IP:80
 
 
 # change to random delay

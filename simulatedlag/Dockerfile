@@ -6,7 +6,7 @@ WORKDIR /work
 RUN apt-get update && \
     apt-get install curl vim iproute2 iputils-ping dnsutils net-tools netcat socat -y
 
-EXPOSE 8084
+EXPOSE 8080
 USER root
 
 # copy files
